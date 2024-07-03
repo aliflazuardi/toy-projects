@@ -14,6 +14,10 @@ public class Board {
         }
     }
 
+    public char getCellState(int row, int col) {
+        return state[row][col];
+    }
+
     public void printBoard() {
         for (int i = 0; i < 3; i++) {
             System.out.printf("%c | %c | %c\n", state[i][0], state[i][1], state[i][2]);
@@ -48,7 +52,7 @@ public class Board {
 
         // check horizontal
         for (int j = 0; j < 3; j++) {
-            if (state[0][0] != ' ' && (state[0][j] == state[1][j] && state[1][j] == state[2][j])) {
+            if (state[0][j] != ' ' && (state[0][j] == state[1][j] && state[1][j] == state[2][j])) {
                 return true;
             }
         }
