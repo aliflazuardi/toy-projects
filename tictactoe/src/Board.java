@@ -26,6 +26,11 @@ public class Board {
     }
 
     public boolean placePiece(int row, int col, char piece) {
+        // input validation
+        if (row >= 3 || row < 0 || col >= 3 || col < 0) {
+            return false;
+        }
+
         if (isPiecePlaced(row, col)) {
             return false;
         }
