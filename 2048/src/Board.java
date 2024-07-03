@@ -9,19 +9,19 @@ public class Board {
         return false;
     }
 
-    void shiftRight() {
+    public void shiftRight() {
 
     }
 
-    void shiftLeft() {
+    public void shiftLeft() {
 
     }
 
-    void shiftUp() {
+    public void shiftUp() {
 
     }
 
-    void shiftDown() {
+    public void shiftDown() {
 
     }
 
