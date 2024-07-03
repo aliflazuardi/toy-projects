@@ -26,5 +26,7 @@ public class Main {
             isPlaced = board.placePiece(row, col, symbol);
             board.printBoard();
         }
+
+        System.out.println(symbol + " has won!");
     }
 }
