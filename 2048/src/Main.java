@@ -8,6 +8,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         while (!game.isGameOver()) {
+            System.out.println("Enter your move: ");
             String input = scanner.nextLine();
             game.makeMove(input);
         }
